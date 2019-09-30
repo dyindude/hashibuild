@@ -3,7 +3,7 @@ node('master') {
         checkout scm
     }
     stage('building image') {
-      image = docker.build "dyindude/hashibuild:$BUILD_NUMBER"
+      image = docker.build "dyindude/hashibuild:light"
     }
     stage('publishing image') {
       docker.withRegistry( '', 'dockerhub' ) {
