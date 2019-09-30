@@ -1,5 +1,5 @@
 FROM hashicorp/terraform:light
-FROM vault:1.2.3
+FROM vault:latest
 FROM hashicorp/packer:light
 FROM alpine:latest
 
